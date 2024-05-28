@@ -1,0 +1,113 @@
+/* ShadowBox.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shadow-box {
+  background-image: url('https://wallpaperaccess.com/full/5793534.jpg'); /* Use the path to your image file */
+  background-size: cover; /* Adjust background size as needed */
+  background-position: center; /* Center the background image */
+  padding: 50px 20px; /* Responsive padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+.home-h2 {
+  font-family: cursive;
+  font-weight: 300;
+}
+
+.shadow-box h1 {
+  margin-bottom: 30px;
+  text-align: center; /* Center align text */
+}
+
+.logo-home {
+  width: 50%; /* Adjust the width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.3;
+}
+
+.button-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  margin-top: 30px; /* Example margin */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.button {
+  margin: 10px; /* Margin around buttons */
+  background-color: #fa5c5c;
+  padding: 10px 20px; /* Adjust padding for better touch targets */
+  border: none;
+  outline: none;
+  color: #fff;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: sans-serif;
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+@keyframes moveText {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.animated-text {
+  animation: moveText 2s ease infinite;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .shadow-box {
+    padding: 40px 15px; /* Adjust padding */
+    height: auto; /* Adjust height */
+  }
+
+  .logo-home {
+    width: 60%; /* Adjust the width for smaller screens */
+  }
+
+  .button {
+    font-size: 16px; /* Adjust font size */
+    padding: 8px 15px; /* Adjust padding */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .shadow-box {
+    padding: 30px 10px; /* Adjust padding */
+   
+  }
+
+  .shadow-box h1 {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .logo-home {
+    width: 70%; /* Adjust the width for smaller screens */
+  }
+
+  .button {
+    font-size: 14px; /* Adjust font size */
+    padding: 6px 10px; /* Adjust padding */
+  }
+  
+.home-h2{
+  font-size: 18px;
+}
+
+
+}
